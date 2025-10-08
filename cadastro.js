@@ -19,7 +19,7 @@ formcadastro.addEventListener('submit', function(event){
 
     emailerro.textContent = "";
     senhaerro.textContent = "";
-    confirmaremailerro.Content= "";
+    confirmaremailerro.textContent= "";
     confirmarsenhaerro.textContent = "";
 
     let campoinvalido = true;
