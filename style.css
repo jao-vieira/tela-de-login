@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    background-color: #bfbfbf;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 5rem;
+    font-family: "Epunda Slab", serif;
+}
+
+.cadastro-container {
+    position: relative;
+    background-color: #e0e0e0;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #191919;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(57, 63, 70, 0.5);
+}
+
+input {
+    flex-grow: 1;
+    background-color: #efefef;
+    border: 2px solid #191919;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+input::placeholder {
+    color: #080808;
+}
+
+.email-user, .senha-user {
+    display: flex;
+    align-items: center; 
+    width: 100%; 
+    margin-bottom: 15px;
+}
+
+.email-user label,
+.senha-user label {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 80px;
+    text-align: right; 
+    margin-right: 10px; 
+}
+
+.erro {
+    color: #8b0000;
+    padding: 0.3rem;
+    font-size: 15px;
+}
+
+a {
+    position: absolute;
+    bottom: 8.4rem;
+    margin-left: 15px;
+    font-size: 15px;
+    color:#1a54d4;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #11388e;
+    transform: translateY(-2px);
+}
+
+.button{
+    align-items: baseline;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s eas
+}
+
+.button button {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100px;
+    background-color: #1a54d4;
+    color: #e0e0e0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#buttonlogin {
+    position: absolute;
+    right: 23.3rem;
+    font-size: 15px;
+    margin: 5px;
+    border: 2px solid #191919;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#buttonlogin:hover {
+    background-color: #11388e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Página de cadastro*/
+
+.login-container {
+    background-color: #e0e0e0;
+    padding: 3rem;
+    margin-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #191919;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(57, 63, 70, 0.5);
+}
+
+#buttoncadastrar {
+    font-size: 15px;
+    margin: 5px;
+    border: 2px solid #191919;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#buttonvoltar {
+    font-size: 15px;
+    margin: 5px;
+    border: 2px solid #191919;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#buttonvoltar:hover {
+    background-color: #11388e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#buttoncadastrar:hover {
+    background-color: #11388e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .login-container,
+    .cadastro-container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 35px;
+        padding-bottom: 3rem;
+    }
+
+    .email-user label,
+    .senha-user label {
+        width: 60px;
+    }
+
+    a {
+        bottom: 7rem;
+        font-size: 14px;
+    }
+
+    #buttonlogin {
+        right: 4.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: transparent;
+    }
+
+    .login-container,
+    .cadastro-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-bottom: 2rem;
+    }
+
+    .email-user, .senha-user {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .email-user label,
+    .senha-user label {
+        width: auto;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+    
+    .button-cadastrar {
+        
+        position: static;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    a {
+        position: static;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        width: 100%;
+        align-items: center;
+    }
+
+    #buttonlogin {
+        position: static;
+        width: 100%;
+    }
+    
+    #buttoncadastrar, #buttonvoltar {
+        width: 100%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <form class="cadastro-container" id="cadastro">
+            <h1>Faça o Cadastro</h1>
+
+            <div class="email-user">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email_usuário" placeholder="Digite seu Email...">
+                <span id="emailerro" class="erro"></span>
+            </div>
+
+            <div class="email-user">
+                <label for="confirmaremail">Email:</label>
+                <input type="email" id="confirmaremail" name="confirmar_email_usuário" placeholder="Digite seu Email novamente...">
+                <span id="erro-email2"class="erro"></span>
+            </div>
+
+            <div class="senha-user">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha_usuário" placeholder="Digite sua senha...">
+                <span id="senhaerro" class="erro"></span>
+            </div>
+
+            <div class="senha-user">
+                <label for="confirmarsenha">Senha:</label>
+                <input type="password" id="confirmarsenha" name="confirmar_senha_usuário" placeholder="Confirme sua senha...">
+                <span id="erro-senha2" class="erro"></span>
+            </div>
+
+            <div class="button">
+                <button type='submit' id="buttoncadastrar">Cadastrar</button>
+                <button id="buttonvoltar">Voltar</button>
+            </div>
+        </form>
+    </main>
+    <script src="cadastro.js"></script>
+</body>
+</html>
